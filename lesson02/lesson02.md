@@ -12,6 +12,8 @@ After watching the [video](https://www.youtube.com/watch?v=F4tvM4Vb3A0), I worke
 
 So here it is, the [New Bear Detector](https://huggingface.co/spaces/chrwittm/bear-detector) on HuggingFaces.
 
+![bear_detector](bear_detector.png)
+
 All the files are located in the `bear_detector` subfolder, most notably, the [notebook](/lesson02/bear_detector/app.ipynb) which I used to generate the content which I uploaded to HuggingFace.
 
 ### How I Re-published the Bear Detector
