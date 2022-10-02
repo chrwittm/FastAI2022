@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Bear Detector</title>
+    </head>
+    <body>
+        <p>Upload a picture of a bear, and this app will tell you if it is a black bear, a grizzly bear or a teddy bear.</p>
+    </body>
+</html>
+
+<input id="photo" type="file">
+<div id="results"></div>
+
+<script>
+  async function loaded(reader) {
+    const response = await fetch('https://hf.space/embed/chrwittm/bear-detector/+/api/predict', {
+      method: "POST", body: JSON.stringify({ "data": [reader.result] }),
+      headers: { "Content-Type": "application/json" }
+    });
+    const json = await response.json();
+    const label0 = json['data'][0]['confidences'][0]['label'];
+    const prob0  = json['data'][0]['confidences'][0]['confidence']
+    const label1 = json['data'][0]['confidences'][1]['label'];
+    const prob1  = json['data'][0]['confidences'][1]['confidence']
+    const label2 = json['data'][0]['confidences'][2]['label'];
+    const prob2  = json['data'][0]['confidences'][2]['confidence']
+    results.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>This is a ${label0}!<br>(confidence: ${prob0.toFixed(5)})</p><br>Less likely:<br>${label1}: ${prob1.toFixed(5)}<br>${label2}: ${prob2.toFixed(5)}`
+  }
+  function read() {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => loaded(reader))
+    reader.readAsDataURL(photo.files[0]);
+  }
+  photo.addEventListener('input', read);
+</script>
