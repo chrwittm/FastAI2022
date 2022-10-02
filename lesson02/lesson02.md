@@ -2,9 +2,14 @@
 
 Lesson 2 focused on publishing the model (putting things in production).
 
-[Forum Official Topic](https://forums.fast.ai/t/lesson-2-official-topic/96033/1)
+I approached reworking this lesson in the following way:
 
-## Re-publishing the Bear Detector
+* Re-Publishing my [Bear-Detector with HuggingFace](https://huggingface.co/spaces/chrwittm/bear-detector)
+* Using the HuggingFace API to create a [GitHub-Pages version of the Bear-Detector](https://chrwittm.github.io/FastAI2022/lesson02/bear_detector/bear_detector.html)
+
+> Note: This is the [Official Thread in the Forums](https://forums.fast.ai/t/lesson-2-official-topic/96033/1).
+
+## Re-Publishing my Bear-Detector with HuggingFace
 
 After watching the [video](https://www.youtube.com/watch?v=F4tvM4Vb3A0), I worked on my old [bear detector](https://github.com/chrwittm/Bear-Detector) which I created about a year ago (on the previous version of the course / based on the book): Since I have kind of done the training before (i.e. last year), instead of re-visiting that, I first wanted to publish my old model using HuggingFace spaces, because I still remember quite vividly that is was quite difficult to publish last year, failing with Voila, finally doing it Heroku. Additionally, the Heroku free services will also be retired later this year.
 
@@ -126,3 +131,20 @@ git push
 ### The final result on HuggingFace
 
 So here it is, the [New Bear Detector](https://huggingface.co/spaces/chrwittm/bear-detector) on HuggingFaces.
+
+Compared to the previous method with Viola / Heroku, the overall workflow was a lot easier.
+
+## Using the HuggingFace API to create a GitHub-Pages version of the Bear-Detector
+
+Restarting the [video at 1:02:13](https://www.youtube.com/watch?v=F4tvM4Vb3A0&t=3733s), it looks pretty straight-forward, but the first topic to "solve" it GitHub Pages:
+
+ [Fastpages](https://fastpages.fast.ai/) is actually depreciated by now, and the new Fast.AI recommendation is [Quarto](https://nbdev.fast.ai/tutorials/blogging.html). To keep things simple, I decided to go with just the GitHub Pages for now. I activated GitHub Pages for my FastAI2022 repo and created a hello-world.html, and [it works](https://chrwittm.github.io/FastAI2022/hello-world.html) :)
+
+Once that was done, I copied the [tiny-pets example](https://github.com/fastai/tinypets/blob/master/1single.html), and made some slight adjustments:
+
+* Swapping out the API: <https://huggingface.co/spaces/chrwittm/bear-detector> - This was actually enough for a running version 1.0 :)
+* I also added same functionality as the HuggingSpace app, i.e. I added the display of the probabilities of all categories. That felt like an accomplishment, since I am not really familiar with javascript.
+
+Here is it: [The Bear Detector on GitHub Pages](https://chrwittm.github.io/FastAI2022/lesson02/bear_detector/bear_detector.html)
+
+![bear_detector](bear_detector2.png)
