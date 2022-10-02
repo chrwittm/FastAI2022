@@ -6,6 +6,7 @@ I approached reworking this lesson in the following way:
 
 * Re-Publishing my [Bear-Detector with HuggingFace](https://huggingface.co/spaces/chrwittm/bear-detector)
 * Using the HuggingFace API to create a [GitHub-Pages version of the Bear-Detector](https://chrwittm.github.io/FastAI2022/lesson02/bear_detector/bear_detector.html)
+* Picking up the ["Is it a Cat or Dog"-notebook](../lesson01/cat_or_dog/cat_or_dog.ipynb) from lesson 1, I [refined it](/lesson02/cat_or_dog2/cat_or_dog2-training.ipynb) and also put it on [HuggingFace](https://huggingface.co/spaces/chrwittm/cat_or_dog) for a closed-loop repeat.
 
 > Note: This is the [Official Thread in the Forums](https://forums.fast.ai/t/lesson-2-official-topic/96033/1).
 
@@ -148,3 +149,23 @@ Once that was done, I copied the [tiny-pets example](https://github.com/fastai/t
 Here is it: [The Bear Detector on GitHub Pages](https://chrwittm.github.io/FastAI2022/lesson02/bear_detector/bear_detector.html)
 
 ![bear_detector](bear_detector2.png)
+
+## Cat or Dog 2.0
+
+The purpose of this exercise was a closed-loop repeat:
+
+* I created a [new notebook](/lesson02/cat_or_dog2/cat_or_dog2-training.ipynb) to train a model which can recognize cats and dogs.
+* I created [another notebook](/lesson02/cat_or_dog2/nbs/app.ipynb) as the template for the app
+* I uploaded everything to HuggingFace: [Here is the App](https://huggingface.co/spaces/chrwittm/cat_or_dog).
+* Created a new HTML-Page for the classification. [Here it is](https://chrwittm.github.io/FastAI2022/lesson02/cat_or_dog2/cat_or_dog.html)
+
+Learnings:
+
+* The nbdev-export still feels shaky
+* Uploading to HuggingFace also took longer than anticipated, my dog picture was rejected first as binary. Opening and saving it in Photoshop solved the problem.
+
+Screenshots of the final results:
+
+![cat_or_dog_huggingface](cat_or_dog.png)
+
+![cat_or_dog_html](cat_or_dog2.png)
