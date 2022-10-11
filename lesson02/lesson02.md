@@ -62,7 +62,7 @@ import notebook2script from nbdev.export
 notebook2script('app.ipynb')
 ```
 
-Instead, this is the way to export the code (as suggetsed [here](https://forums.fast.ai/t/lesson-2-official-topic/96033/460):
+Instead, this is the way to export the code (as suggested [here](https://forums.fast.ai/t/lesson-2-official-topic/96033/460)):
 
 ```python
 import nbdev
@@ -70,7 +70,7 @@ nbdev.export.nb_export('app.ipynb', 'app')
 print('Export successful')
 ```
 
-> Note: Additonally I noticed that the notebook should reside in a folder called `nbs` - not sure if that still needs to be, will test next time.
+> Note: Additionally, I noticed that the notebook should reside in a folder called `nbs` - not sure if that still needs to be, will test next time.
 
 ### Learning 4: Adding requirements.txt
 
