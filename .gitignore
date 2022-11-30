@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Datasets
+lesson03/mnist/mnist2-kaggle/test
+lesson03/mnist/mnist2-kaggle/training
+*.zip
