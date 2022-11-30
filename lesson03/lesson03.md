@@ -55,4 +55,4 @@ Seemingly simple tasks like [converting the csv-files to images](https://github.
 
 ## Wrapping-up Lesson 3
 
-While I could improve the results of my projects, both for Titanic and MNIST, it feels like it would be some way over-optimizing. I did not enter the competitions to win, but to learn about gradient descent. Having spent the last 8 weeks with my lesson 3-projects (and allowing myself to get somewhat side-tracked), and I feel it is time to move on to the next lesson. I am looking forward to the next challenging projects!
+While I could improve the results of my projects, both for Titanic and MNIST, it feels like it would be some way over-optimizing. I did not enter the competitions to win, but to learn about gradient descent. Having spent the last 8 weeks with my lesson 3-projects (and allowing myself to get somewhat side-tracked), I feel it is time to move on to the next lesson. I am looking forward to the next challenging projects!
