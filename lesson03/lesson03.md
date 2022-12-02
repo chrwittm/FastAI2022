@@ -17,7 +17,7 @@ The main focus of [lesson 3](https://www.youtube.com/watch?v=hBBOjCiFcuo&t=1416s
 * Calculate the predictions and the loss (forward-pass)
 * Calculate the derivatives of the parameters (i.e. how does changing the parameters change the loss) (backward-pass)
 * Update the parameters (via the learning rate)
-* Don't forgot to [initialize the gradients](https://twitter.com/karpathy/status/1013244313327681536?lang=en)
+* Don't forget to [initialize the gradients](https://twitter.com/karpathy/status/1013244313327681536?lang=en)
 * Restart
 
 However, in the actual implementation and its simplicity, there is a lot of magic, which I tried to unpack for myself. Working through Jeremy's notebook "[How does a neural net really work?](https://www.kaggle.com/code/jhoward/how-does-a-neural-net-really-work/)", I tried to not only think through the concept, but also to visualize it. The result is available as
