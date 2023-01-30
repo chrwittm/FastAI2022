@@ -9,3 +9,4 @@ So far, I have done the following lessons
 * [Lesson 1](/lesson01/lesson01.md)
 * [Lesson 2](/lesson02/lesson02.md)
 * [Lesson 3](/lesson03/lesson03.md)
+* [Lesson 4](/lesson04/lesson04.md)
